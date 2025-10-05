@@ -1,48 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        .container{
-            display: inline-flex;
-            flex-direction: row;
-           
-            gap: 50px;
-            flex-wrap: wrap;
-            border: 5px rebeccapurple solid;
-        }
-        .item{
-            margin: 0px;
-            width: 100px;
-        }
-        .yellow{
-            order: ;
-            margin: 0;
-        }
-        .violet{ 
-            order: ;
-            margin: 0;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Experiment 5: CSS Selectors</title>
+  <link rel="stylesheet" href="lab5.css">
 </head>
 <body>
-    <div class="container">
-        <p class="item" style="background-color: red ;">red</p>
-        <p class="violet" style="background-color: violet;">violet</p>
-        <p class="item" style="background-color: green;">green</p>
-        <p class="yellow" style="background-color:yellow ;">yellow </p>
-        <p class="item" style="background-color:orange ;">orange</p>
-        <p class="item" style="background-color:black ;">blas   </p>
-        <p class="item" style="background-color: pink;">pink</p> 
-        <p class="item" style="background-color: red ;">red</p>
-        <p class="violet" style="background-color: violet;">violet</p>
-        <p class="item" style="background-color: green;">green</p>
-        <p class="yellow" style="background-color:yellow ;">yellow </p>
-        <p class="item" style="background-color:orange ;">orange</p>
-        <p class="item" style="background-color:black ;">blas   </p>
-        <p class="item" style="background-color: pink;">pink</p> 
-    </div>
+
+  <h1 id="main-title">Experiment 5: CSS Selectors</h1>
+  <p>This experiment demonstrates the use of various CSS selectors including element, class, ID, grouping, and pseudo-selectors.</p>
+
+  <img src="css.jpg" alt="CSS Image" width="300">
+
+  <h2>Example Section</h2>
+  <p>This is a normal paragraph styled using element selectors.</p>
+  <p class="highlight">This paragraph has a highlight class applied to it.</p>
+
+  <div>
+    <h2>Div Section</h2>
+    <p>This paragraph is inside a div and styled using a descendant selector.</p>
+    <ul>
+      <li>First item</li>
+      <li>Second item</li>
+      <li>Last item</li>
+    </ul>
+  </div>
+
+  <form>
+    <label>Email: <input type="email" name="email"></label>
+    <label>Username: <input type="text" name="username"></label><br>
+    <label>Password: <input type="password" name="password"></label><br>
+  </form>
+
+  <p><a href="lab2.html">Back to Lab 2</a></p>
+
 </body>
 </html>
