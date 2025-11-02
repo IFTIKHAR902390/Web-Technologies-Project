@@ -1,52 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <style>
-        h1{
-            text-align: center;
-        }
-        div{
-            text-align: center;
-        }
-
-        
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home</title>
+  <link rel="stylesheet" href="styleindex.css" />
 </head>
 <body>
-    <h1>Web Technologies Handouts</h1>
-    <div>
-        <img  src="comsats-logo.jpg" alt="Comsats Logo" style="height: 200px;" >
-    
-    <h2>Course: CSS-336(2+1)</h2>
-    <p>Semester: Fall 2025</p>
-    <table  style="margin-left: 400PX;" border="2">
-        <tr>
+
+  <!-- Desktop container -->
+  <div class="container">
+    <div class="content">
+      <h1>Web Technologies Handouts</h1>
+
+      <div>
+        <img src="./comsats-logo.JPG" alt="Comsats Logo" style="height: 200px;" />
+        <h2>Course: CSC-336 (2+1)</h2>
+        <p>Semester: Fall 2025</p>
+
+        <table border="2">
+          <tr>
             <th>Name</th>
-            <th>Registration ID:</th>
+            <th>Registration ID</th>
             <th>Section</th>
-        </tr>
-        <tr>
-            <td>Syed Iftikhar Shah </td>
+          </tr>
+          <tr>
+            <td>Syed Iftikhar Shah</td>
             <td>FA22-BCE-057</td>
             <td>BCE-7B</td>
-        </tr>
-    </table>
+          </tr>
+        </table>
+      </div>
+
+      <br /><br />
+      <p>Following are the list of experiments:</p>
+
+      <!-- Desktop full titles -->
+      <ol class="desktop-list">
+        <li><a href="./Lab1.html">Experiment 1: Introduction to HTML Basics</a></li>
+        <li><a href="./lab2.html">Experiment 2: Creating and Publishing an Online Lab Manual</a></li>
+        <li><a href="./LAB3.html">Experiment 3: Working with Tables, Lists, Images, and Hyperlinks</a></li>
+        <li><a href="./lab4.html">Experiment 4: Applying CSS to HTML (Inline, Internal, and External Styles)</a></li>
+        <li><a href="./lab5.html">Experiment 5: CSS Selectors</a></li>
+        <li><a href="./LAB6.html">Experiment 6: Web Responsiveness</a></li>
+      </ol>
     </div>
-    <br>
-    <br>
-    <p>Following are the list of experiments:</p>
-    <ol>
-        <li><a href="./Lab1.html">Experiment 1: Introduction to HTML Basics</a></li><br>
-        <li><a href="./lab 2.html">Experiment 2: Creating and Publishing an Online Lab Manual</a></li><br>
-        <li><a href="./LAB3.html">Experiment 3: Introduction to HTML Basics</a></li><br>
-        <li><a href="./lab4.html">Experiment 4:Applying CSS to HTML
- (Inline, Internal, and External Styles)</a></li><br>
-        <li><a href="./lab5.html"> Experiment 5: CSS Selectors</a></li>
-    </ol>
+  </div>
+
+  <!-- Mobile container -->
+  <div class="mcontainer">
+    <div class="mcontent">
+      <h1>Web Technologies Handouts</h1>
+       <img src="./comsats-logo.JPG" alt="Comsats Logo" style="height: 200px;" />
+      <p>Course: CSC-336 (2+1)</p>
+      <p>Semester: Fall 2025</p>
+      <table border="2">
+          <tr>
+            <th>Name</th>
+            <th>Registration ID</th>
+            <th>Section</th>
+          </tr>
+          <tr>
+            <td>Syed Iftikhar Shah</td>
+            <td>FA22-BCE-057</td>
+            <td>BCE-7B</td>
+          </tr>
+        </table>
+
+      <!-- Mobile simplified list -->
+      <ol class="mobile-list">
+        <li><a href="./Lab1.html">Lab 1</a></li>
+        <li><a href="./lab2.html">Lab 2</a></li>
+        <li><a href="./LAB3.html">Lab 3</a></li>
+        <li><a href="./lab4.html">Lab 4</a></li>
+        <li><a href="./lab5.html">Lab 5</a></li>
+        <li><a href="./LAB6.html">Lab 6</a></li>
+      </ol>
+    </div>
+  </div>
 
 </body>
-
 </html>
