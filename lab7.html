@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Fundamentals & Console Programming</title>
+     <style>
+    body {
+        background-color: blanchedalmond;
+    }
+</style>
+</head>
+<body>
+    <h1>JavaScript Fundamentals & Console Programming</h1>
+    <p>Following are the Lab Tasks</p>
+
+    <!-- Task 1 -->
+    <h2>Task1: Click on Following Button</h2>
+    <button onclick="task1()">Task 1: Show Name and Registration ID</button>
+    <p id="output1"></p>
+
+    <!-- Task 2 -->
+    <h2>Task2: Enter The Following numbers and then click the button.</h2>
+    <label>Enter 1st number:</label>
+    <input type="number" id="num1"><br>
+    <label>Enter 2nd number:</label>
+    <input type="number" id="num2"><br><br>
+    <button onclick="task2()">Task 2: Arithmetic & Comparison Operations</button>
+    <p id="output2"></p>
+
+    
+    <script>
+        // Task 1 - Name and Registration ID
+        function task1() {
+            let name = prompt("Enter your Name:");
+            let regID = prompt("Enter your Registration ID:");
+            alert("Your Name is " + name + " and your Registration ID is " + regID);
+            document.getElementById("output1").innerHTML = 
+                "Your Name is " + name + " and your Registration ID is " + regID;
+        }
+
+        // Task 2 - Arithmetic & Comparison
+        function task2() {
+            let num1 = parseFloat(document.getElementById("num1").value);
+            let num2 = parseFloat(document.getElementById("num2").value);
+
+            if (isNaN(num1) || isNaN(num2)) {
+                alert("Please enter valid numbers!");
+                return;
+            }
+
+            let sum = num1 + num2;
+            let diff = num1 - num2;
+            let prod = num1 * num2;
+            let div = num1 / num2;
+            let comp = num1 > num2;
+
+            document.getElementById("output2").innerHTML =
+                "Sum: " + sum + "<br>" +
+                "Difference: " + diff + "<br>" +
+                "Product: " + prod + "<br>" +
+                "Division: " + div + "<br>" +
+                "Is first number greater? " + comp;
+        }
+   </script>
+</body>
+</html>
