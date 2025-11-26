@@ -1,0 +1,73 @@
+:root{
+  --card-bg: #fff;
+  --accent: #d32f2f;
+  --pad: 16px;
+  --radius: 10px;
+  --max-width: 900px;
+}
+
+*{box-sizing:border-box}
+body{
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial;
+  margin:0;
+  padding:20px;
+  background: #fff;
+  color:#222;
+  display:flex;
+  justify-content:center;
+}
+
+main{
+  width:100%;
+  max-width:var(--max-width);
+}
+
+header{
+  text-align:center;
+  margin-bottom:10px;
+}
+h1{margin:6px 0}
+.subtitle{color:#555;margin-top:0}
+
+.card{
+  background: var(--card-bg);
+  padding:var(--pad);
+  border-radius:var(--radius);
+  margin:12px 0;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+}
+
+.controls{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-top:8px}
+.color-btn{padding:8px 12px;border-radius:6px;border:1px solid #ddd;cursor:pointer}
+.color-btn:hover{transform:translateY(-2px)}
+
+.hidden{display:none}
+.explain{color:#666;margin-top:8px;font-size:0.95rem}
+
+.stage{
+  width:100%;
+  height:150px;
+  border:1px dashed #ccc;
+  border-radius:6px;
+  margin:8px 0;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:linear-gradient(180deg, #fafafa, #fff);
+}
+
+.box{
+  width:60px;height:60px;background:red;border-radius:6px;
+  transition: transform .18s ease, width .12s ease, height .12s ease, border-radius .18s;
+  user-select:none;
+  cursor:pointer;
+  outline: none;
+}
+
+footer{ text-align:center;color:#888;font-size:0.9rem;margin:12px 0}
+
+/* small screens */
+@media (max-width:640px){
+  .controls{flex-wrap:wrap}
+  .box{width:50px;height:50px}
+}
