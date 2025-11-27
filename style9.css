@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    transition: background-color 0.5s ease;
+}
+
+.panel {
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 15px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 8px;
+    border: none;
+    background-color: #333;
+    color: white;
+}
+
+#box {
+    height: 120px;
+    width: 120px;
+    background-color: orange;
+    margin: 40px auto;
+    transition: all 0.5s ease;
+    border-radius: 5px;
+}
+
+.animate {
+    transform: rotate(360deg);
+    background-color: purple !important;
+}
+
+p {
+    font-size: 20px;
+    font-weight: bold;
+}
