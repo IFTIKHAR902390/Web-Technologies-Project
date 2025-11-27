@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Control Panel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Interactive Control Panel</h1>
+
+    <div class="panel">
+        <button onclick="changeBackground('red')">Red Background</button>
+        <button onclick="changeBackground('blue')">Blue Background</button>
+        <button onclick="runAnimation()">Animate Box</button>
+        <button onclick="updateMessage(callbackMessage)">Show Message</button>
+
+        <select id="actionSelector">
+            <option value="shape">Change Shape</option>
+            <option value="size">Change Size</option>
+            <option value="reset">Reset Box</option>
+        </select>
+
+        <button onclick="performAction()">Apply Action</button>
+    </div>
+
+    <div id="box"></div>
+
+    <p id="output"></p>
+
+    <script src="script.js"></script>
+</body>
+</html>
